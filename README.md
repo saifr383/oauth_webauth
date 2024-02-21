@@ -11,6 +11,7 @@ This plugin offers a WebView implementation approach for OAuth authorization/aut
 | iOS | :white_check_mark: |
 | Web | :white_check_mark: |
 
+
 ## Preamble
 Other plugins like [Flutter AppAuth](https://pub.dev/packages/flutter_appauth) uses native implementation of [AppAuth](https://appauth.io/) which in turn uses `SFAuthenticationSession` and `CustomTabs` for iOS and Android respectively. When using `SFAuthenticationSession` and `CustomTabs` your app will/could present some problems like:
 - UI: users will notice a breaking UI difference when system browser opens to handle the identity provider authentication process.
