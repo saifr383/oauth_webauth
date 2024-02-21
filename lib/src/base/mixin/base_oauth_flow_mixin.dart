@@ -54,8 +54,10 @@ mixin BaseOAuthFlowMixin on BaseFlowMixin {
                 DateTime.now().millisecondsSinceEpoch.toString().codeUnits),
             if (configuration.loginHint != null)
               'login_hint': configuration.loginHint,
+            if (configuration.startPage != null)
+              'login_hint': configuration.startPage,
             if (configuration.promptValues?.isNotEmpty ?? false)
-              'prompt': configuration.promptValues!.join(' '),
+              'start_page': configuration.promptValues!.join(' '),
           }));
   }
 
