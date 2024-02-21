@@ -187,7 +187,7 @@ class OAuthConfiguration extends BaseConfiguration {
         redirectUrl: redirectUrl ?? this.redirectUrl,
         baseUrl: baseUrl ?? this.baseUrl,
         clientId: clientId ?? this.clientId,
-    startPage:startPage,??this.startPage,
+    startPage:startPage??this.startPage,
         clientSecret: clientSecret ?? this.clientSecret,
         delimiter: delimiter ?? this.delimiter,
         basicAuth: basicAuth ?? this.basicAuth,
