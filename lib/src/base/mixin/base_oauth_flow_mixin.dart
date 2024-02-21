@@ -55,9 +55,9 @@ mixin BaseOAuthFlowMixin on BaseFlowMixin {
             if (configuration.loginHint != null)
               'login_hint': configuration.loginHint,
             if (configuration.startPage != null)
-              'login_hint': configuration.startPage,
+              'start_page': configuration.startPage,
             if (configuration.promptValues?.isNotEmpty ?? false)
-              'start_page': configuration.promptValues!.join(' '),
+              'prompt': configuration.promptValues!.join(' '),
           }));
   }
 
