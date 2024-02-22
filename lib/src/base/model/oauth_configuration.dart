@@ -28,8 +28,7 @@ class OAuthConfiguration extends BaseConfiguration {
   /// authorization flow.
   final String? baseUrl;
 
-
-  final String? startPage;
+  final Map<String, String>? extraParameter;
 
   /// The client identifier for this client.
   ///
@@ -89,7 +88,7 @@ class OAuthConfiguration extends BaseConfiguration {
     required this.clientId,
     this.clientSecret,
     this.delimiter,
-    this.startPage,
+    this.extraParameter,
     this.basicAuth,
     this.httpClient,
     this.scopes,
@@ -124,7 +123,7 @@ class OAuthConfiguration extends BaseConfiguration {
     this.delimiter,
     this.basicAuth,
     this.httpClient,
-    this.startPage,
+    this.extraParameter,
     this.scopes,
     this.loginHint,
     this.promptValues,
@@ -171,7 +170,7 @@ class OAuthConfiguration extends BaseConfiguration {
     Map<String, String>? headers,
     Stream<String>? urlStream,
     ThemeData? themeData,
-    String? startPage,
+    Map<String, String>? extraParameter,
     Map<String, String>? textLocales,
     Locale? contentLocale,
     bool? goBackBtnVisible,
@@ -187,7 +186,7 @@ class OAuthConfiguration extends BaseConfiguration {
         redirectUrl: redirectUrl ?? this.redirectUrl,
         baseUrl: baseUrl ?? this.baseUrl,
         clientId: clientId ?? this.clientId,
-    startPage:startPage??this.startPage,
+        extraParameter: extraParameter ?? this.extraParameter,
         clientSecret: clientSecret ?? this.clientSecret,
         delimiter: delimiter ?? this.delimiter,
         basicAuth: basicAuth ?? this.basicAuth,
